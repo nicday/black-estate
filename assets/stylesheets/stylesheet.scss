@@ -1,0 +1,53 @@
+@import "normalize";
+@import "foundation";
+
+$red-accent: #86001A;
+
+
+.red-accent {
+  color: $red-accent;
+}
+
+h1, h3, h5 {
+  font-family: 'Vollkorn', serif;
+  font-weight: 400; 
+}
+h2, h4, h6 {
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
+  font-style : italic;
+}
+
+h3 {
+  border-top: 1px solid black;
+  padding-top: 15px;
+}
+
+h4.wine-series {
+  color: #808080;
+}
+
+h6 {
+  @extend .red-accent;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75em;
+}
+
+.pull-quote {
+  @extend .red-accent;
+  font-family: 'Vollkorn', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  text-align: center;
+  border-top: 1px solid $red-accent;
+  border-bottom: 1px solid $red-accent;
+  padding: 10px 0;
+}
+
+.profile-pic {
+  padding-top: 5px;
+  border-top: 3px solid black;
+}
